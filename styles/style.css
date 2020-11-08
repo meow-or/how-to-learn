@@ -9,17 +9,295 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
+.link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+/*                                  header                               */
+
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
+  background: #f2f2f2;
+  padding-left: 64px;
+  display: flex;
+  position: relative;
+}
+
+.header__title {
+  margin: 0;
+  width: 730px;
+  align-self: center;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  z-index: 2;
+}
+
+.header__subtitle {
+  margin: 0;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  z-index: 2;
+}
+
+
+.header__main_illustration {
+  width: 765px;
+  height: 608px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.logo {
+  width: 183px;
+}
+
+.logo_place_header {
+  top: 30px;
+  left: 64px;
+  position: absolute;
+  z-index: 1;
+  height: 32px;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background:  #2f80ed;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: 0;
+}
+
+/*                                       header           END            */
+
+
+/*                              section Description                      */
+
+.description {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*border: dodgerblue 1px solid;*/
+}
+
+.two-columns {
+  width: 80%;
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  /*border: #b72fed 1px solid;*/
+}
+
+.two-columns__brief {
+  display: flex;
+  align-items: flex-start;
+  width: 175px;
+  /*border: rgb(255, 30, 49) 1px dashed;*/
+}
+
+.two-columns__brief-subtitle {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  /*border: rgb(119, 11, 119) 1px dashed;*/
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  display: flex;
+  flex-wrap: wrap;
+  /*border: rgb(30, 255, 86) 1px dashed;*/
+}
+
+.two-columns__paragraph {
+  margin: 0;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  /*border: rgb(119, 112, 13) 1px dashed;*/
+}
+
+.two-columns__paragraph:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*                                 section Description        END       */
+
+
+
+/*                                 section Digits                       */
+
+.digits {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*border: rgb(119, 112, 13) 1px dashed;*/
+}
+
+.section-title {
+  margin: 0 0 20px 0;
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  /*border: rgb(66, 62, 8) 1px dashed;*/
+}
+
+.section-subtitle {
+  margin: 0;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  text-align: center;
+  /*border: rgb(66, 62, 8) 1px dashed;*/
+}
+
+.table {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  /*border: rgb(30, 255, 86) 1px dashed;*/
+}
+
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /*border: rgb(30, 53, 255) 1px dashed;*/
+}
+
+.table__heading {
+  margin: 0 0 20px 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+.digits .table__cell:nth-of-type(2) .table__text::after,
+.digits .table__cell:nth-of-type(5) .table__text::after {
+  display: block;
+  white-space: pre;
+  content: "\AВсемирный Банк, 2017";
+  margin: 0;
+}
+
+.table__text {
+  margin: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+/*                       section Digits        END                    */
+
+
+/*                       section Метод Фейнмана                       */
+
+.feynman {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 790px;
+  background: url('../images/feynman.png') bottom left no-repeat;
+  background-size: 867px 637px;
+  position: relative;
+  /*border: rgb(30, 53, 255) 1px dashed;*/
+}
+
+.feynman__title {
+  width: 648px;
+  margin: 0;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  /*border: rgb(255, 30, 161) 1px dashed;*/
+}
+
+.feynman__subtitle {
+  margin: 70px 0 0 0;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  /*border: rgb(30, 255, 49) 1px dashed;*/
+}
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  top: 395px;
+  right: 48px;
+  /*border: rgb(255, 120, 30) 1px dashed;*/
+}
+
+/*                       section Метод Фейнмана          конец         */
+
+
+/*                       section Принципы обучения от Кауфмана         */
+
+.kaufman {
+  background: #1f1f1f;
+  color: white;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+ }
+
+.section-title_theme_dark {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.section-subtitle_theme_dark {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.table_theme_dark {
+
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -29,3 +307,102 @@
   margin-right: 0;
   margin-top: 80px;
 }
+
+.table__heading_theme_dark {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.table__text_theme_dark {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0px;
+  z-index: -1;
+}
+
+/*                      = section Kaufman =   END                   */
+  .footer {
+    min-height: 350px;
+    padding: 60px 0 40px 0;
+    background: #1f1f1f;
+    color: white;
+    display: flex;
+    justify-content: center;
+  }
+
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  /*border: rgb(226, 225, 213) 1px dashed;*/
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /*border: rgb(156, 28, 28) 1px dashed;*/
+}
+
+.logo_place_footer {
+  height: 35px;
+}
+
+.footer__author {
+  margin: 18px 0;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.footer__column_content_info {
+  display: flex;
+  flex-direction: column;
+  /*border: rgb(156, 28, 28) 1px dashed;*/
+}
+
+.footer__column_content_social {
+  display: flex;
+  flex-direction: column;
+  /*border: rgb(156, 28, 28) 1px dashed;*/
+}
+
+.footer__social-icon {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.footer__column-heading {
+  margin: 0;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.column-links {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 16px 0;
+}
+
+.column-link {
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*                       footer                         */
+
