@@ -9,18 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.link {
-  color: #2f80ed;
-  text-decoration: none;
-}
-
-.link:hover {
-  color: #90b6e7;
-}
-
-.link:active {
-  color: #1f1f1f;
-}
 
 /*                                  header                               */
 
@@ -57,8 +45,21 @@
   z-index: 2;
 }
 
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
 
-.header__main_illustration {
+.header__link:hover {
+  color: #90b6e7;
+}
+
+.header__link:active {
+  color: #1f1f1f;
+}
+
+
+.header__main-illustration {
   width: 765px;
   height: 608px;
   position: absolute;
@@ -115,18 +116,14 @@
   display: flex;
   align-items: flex-start;
   width: 175px;
-  /*border: rgb(255, 30, 49) 1px dashed;*/
-}
-
-.two-columns__brief-subtitle {
   margin: 0;
   font-size: 18px;
   line-height: 1.2;
   font-weight: normal;
   color: #2f80ed;
-  text-decoration: none;
-  /*border: rgb(119, 11, 119) 1px dashed;*/
 }
+
+
 
 .two-columns__main-text {
   width: 80%;
@@ -188,6 +185,9 @@
 }
 
 .table {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   width: 1100px;
   display: flex;
   flex-wrap: wrap;
@@ -206,23 +206,14 @@
 }
 
 .table__heading {
-  margin: 0 0 20px 0;
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
-
-.digits .table__cell:nth-of-type(2) .table__text::after,
-.digits .table__cell:nth-of-type(5) .table__text::after {
-  display: block;
-  white-space: pre;
-  content: "\AВсемирный Банк, 2017";
-  margin: 0;
-}
-
 .table__text {
-  margin: 0;
+  margin: 20px 0 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -238,7 +229,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 790px;
+  min-height: 790px;
   background: url('../images/feynman.png') bottom left no-repeat #f2f2f2;
   background-size: 867px 637px;
   position: relative;
@@ -264,13 +255,23 @@
 }
 
 .feynman__link {
+  color: #2f80ed;
+  text-decoration: none;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
   position: absolute;
-  top: 395px;
+  top: 50%;
   right: 48px;
   /*border: rgb(255, 120, 30) 1px dashed;*/
+}
+
+.feynman__link:hover {
+  color: #90b6e7;
+}
+
+.feynman__link:active {
+  color: #1f1f1f;
 }
 
 
@@ -330,6 +331,8 @@
 }
 
 .kaufman__triangle {
+  background: url(../images/kaufman-triangle.svg);
+  background-size: contain;
   width: 877px;
   height: 877px;
   position: absolute;
@@ -340,6 +343,7 @@
 
 /*                      = section Kaufman =   END                   */
 .footer {
+  box-sizing: border-box;
   min-height: 350px;
   padding: 60px 0 40px 0;
   background: #1f1f1f;
@@ -355,10 +359,13 @@
   /*border: rgb(226, 225, 213) 1px dashed;*/
 }
 
-.footer__column_content_copyright {
-  flex-basis: 711px;
+.footer__column {
   display: flex;
   flex-direction: column;
+}
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
   justify-content: space-between;
   /*border: rgb(156, 28, 28) 1px dashed;*/
 }
@@ -375,14 +382,12 @@
 }
 
 .footer__column_content_info {
-  display: flex;
-  flex-direction: column;
+
   /*border: rgb(156, 28, 28) 1px dashed;*/
 }
 
 .footer__column_content_social {
-  display: flex;
-  flex-direction: column;
+
   /*border: rgb(156, 28, 28) 1px dashed;*/
 }
 
@@ -399,13 +404,15 @@
   font-weight: bold;
 }
 
-.column-links {
+.footer__column-links {
   display: flex;
   flex-direction: column;
   margin: 20px 0 16px 0;
+  padding: 0;
+  list-style: none;
 }
 
-.column-link {
+.footer__column-link {
   text-decoration: none;
   color: white;
   line-height: 30px;
@@ -414,11 +421,11 @@
 }
 
 
-.column-link:hover {
+.footer__column-link:hover {
   color:#2f80ed;
 }
 
-.column-link:active {
+.footer__column-link:active {
   color:#90b6e7;
 }
 /*                       footer                         */
