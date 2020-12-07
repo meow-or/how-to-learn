@@ -1,0 +1,6 @@
+
+.footer__column_content_copyright {
+  flex-basis: 711px;
+  justify-content: space-between;
+  /*border: rgb(156, 28, 28) 1px dashed;*/
+}

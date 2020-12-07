@@ -1,0 +1,10 @@
+.techniques {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
+  padding-top: 100px;
+  margin: 0 auto;
+  /*border: rgb(119, 112, 13) 1px dashed;*/
+}

@@ -1,0 +1,6 @@
+.khan__book-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /*border: #10c3f0 1px dotted;*/
+}

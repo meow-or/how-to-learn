@@ -1,0 +1,9 @@
+/*                              section Description                      */
+
+.description {
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*border: dodgerblue 1px solid;*/
+}

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Сайт о том как научиться учиться">
-  <meta name="keywords" content="Фейнман, обучение, яндекс">
-  <meta name="author" content="Павел Фазлиев">
-  <title>Научиться учиться</title>
-  <link rel="stylesheet" href="./styles/normalize.css">
-  <link rel="stylesheet" href="./styles/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт о том как научиться учиться">
+    <meta name="keywords" content="Фейнман, обучение, яндекс">
+    <meta name="author" content="Pavel Fazliev">
+    <title>Научиться учиться</title>
+    <link rel="stylesheet" href="./vendor/normalize.css">
+    <link rel="stylesheet" href="./pages/index.css">
+  </head>
 <body>
 
   <div class="page">
@@ -18,14 +18,15 @@
       <h1 class="header__title">Научиться учиться</h1>
       <p class="header__subtitle">Какие современные и эффективные подходы
           к обучению вы можете использовать в своей жизни?
-          <a href="#" class="header__link">Узнать &rarr;</a>
+          <a href="#techniques" class="header__link">Узнать &rarr;</a>
       </p>
       <img src="./images/header-image.png" alt="Картина 'Опять двойка'" class="header__main-illustration">
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation__square-pic"></div>
     </header>
 
     <main class="content">
-<!--              секция Главные проблемы в обучении           -->
+
+<!--              секция Главные проблемы в обучении     -->
 
       <section class="description">
 
@@ -59,9 +60,132 @@
         </article>
 
       </section>
- <!--             секция Главные проблемы в обучении       конец    -->
 
-<!--              секция Цифры и факты           -->
+<!--        секция Главные проблемы в обучении       конец    -->
+
+
+<!--              секция Техники обучения [блок techniques]           -->
+
+      <section class="techniques" id="techniques">
+
+        <h2 class="section-title">Техники обучения</h2>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+
+        <ul class="cards">
+
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-attention.png" alt="иконка attention">
+            <h3 class="cards__title">Два вида внимания</h3>
+            <p class="cards__description">
+              Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.
+            </p>
+          </li>
+
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-recall.png" alt="иконка recall">
+            <h3 class="cards__title">Recall</h3>
+            <p class="cards__description">
+              Вспоминайте изученное — это позволит соединить разрозненные порции памяти.
+            </p>
+          </li>
+
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-interliving.png" alt="иконка interliving">
+            <h3 class="cards__title">Интерливинг</h3>
+            <p class="cards__description">
+              Изучайте несколько навыков одновременно, они обогащают друг друга.
+            </p>
+          </li>
+
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-question.png" alt="иконка question">
+            <h3 class="cards__title">Вопросы</h3>
+            <p class="cards__description">
+              Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.
+            </p>
+          </li>
+
+          <li class="cards__item">
+            <img class="cards__image" src="./images/cards-competence.png" alt="иконка competence">
+            <h3 class="cards__title">Иллюзия компетентности</h3>
+            <p class="cards__description">
+              Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.
+            </p>
+          </li>
+
+        </ul>
+
+      </section>
+
+<!--              секция Техники обучения           [END]             -->
+
+<!--              секция Видео на TED                                 -->
+
+      <section class="video">
+
+        <h2 class="section-title">Видео на TED</h2>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+
+        <div class="video__iframes">
+
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/J_89IMS5gJQ"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/0u3bccaRmmg"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+          gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+
+      </section>
+
+<!--              секция Видео на TED                [END]            -->
+
+
+<!--              секция История Барбары Оакли              -->
+
+      <section class="oakley">
+
+        <article class="two-columns">
+
+          <h2 class="two-columns__brief">
+            История Барбары Оакли.
+          </h2>
+
+          <div class="two-columns__main-text">
+
+            <p class="two-columns__paragraph">
+              С детства Барбаре не давалась математика. Она считала себя законченным
+              гуманитарием, причём далеко не самым умным. В армии она изучала русский язык,
+              чтобы получить надбавку, да так успешно, что её выдвинули в командиры. Но для
+              продвижения по службе нужно было сдавать математику. И тогда Барбара придумала
+              свой подход к точным наукам. Оказалось, если вам что-то «плохо даётся», ваши добытые
+              трудом знания гораздо глубже, чем у тех, кому всё ясно с первого взгляда.
+            </p>
+
+          </div>
+
+        </article>
+
+      </section>
+
+<!--              секция История Барбары Оакли         [END]            -->
+
+
+<!--             секция Метод Фейнмана                  -->
+
+      <section class="feynman">
+
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть.</p>
+        <a href="https://lifehacker.ru/metod-fejnmana/" class="feynman__link" target="_blank">Подробнее &rarr;</a>
+
+      </section>
+
+<!--              секция Метод Фейнмана          конец -->
+
+<!--              секция Цифры и факты                                  -->
 
       <section class="digits">
 
@@ -77,58 +201,77 @@
 
           <li class="table__cell">
             <h3 class="table__heading">2,1 миллиарда</h3>
-            <p class="table__text">Число нуждающихся в повышении квалификации</p>
-            <p class="table__text">Всемирный Банк, 2017</p>
+           <p class="table__text">Число нуждающихся в повышении квалификации</p>
+           <p class="table__text">Всемирный Банк, 2017</p>
           </li>
 
           <li class="table__cell">
-            <h3 class="table__heading">1000 терабайт</h3>
-            <p class="table__text">Объём памяти человека</p>
+           <h3 class="table__heading">1000 терабайт</h3>
+           <p class="table__text">Объём памяти человека</p>
           </li>
 
-          <li class="table__cell">
-            <h3 class="table__heading">500 триллионов</h3>
+        <li class="table__cell">
+           <h3 class="table__heading">500 триллионов</h3>
             <p class="table__text">Число ответственных за обучение нервных синапсов у взрослого человека</p>
           </li>
 
-          <li class="table__cell">
+         <li class="table__cell">
             <h3 class="table__heading">420 миллионов</h3>
             <p class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования для трудоустройства</p>
             <p class="table__text">Всемирный Банк, 2017</p>
+         </li>
+
+          <li class="table__cell">
+           <h3 class="table__heading">17–20 лет</h3>
+           <p class="table__text">Пик обучаемости</p>
           </li>
 
           <li class="table__cell">
-            <h3 class="table__heading">17–20 лет</h3>
-            <p class="table__text">Пик обучаемости</p>
+           <h3 class="table__heading">1885 год</h3>
+           <p class="table__text">Открытие кривой забывания</p>
           </li>
 
-          <li class="table__cell">
-            <h3 class="table__heading">1885 год</h3>
-            <p class="table__text">Открытие кривой забывания</p>
-          </li>
-
-          <li class="table__cell">
+        <li class="table__cell">
             <h3 class="table__heading">1889 год</h3>
-            <p class="table__text">Открытие условного рефлекса</p>
-          </li>
+           <p class="table__text">Открытие условного рефлекса</p>
+         </li>
 
         </ul>
 
       </section>
+
 <!--            секция Цифры и факты         конец      -->
 
+<!--            секция Салман Хан                       -->
 
-<!--             секция Метод Фейнмана                  -->
+      <section class="khan">
 
-      <section class="feynman">
+        <article class="khan__container">
 
-        <h2 class="feynman__title">Метод Фейнмана</h2>
-        <p class="feynman__subtitle">Выучить и не забыть.</p>
-        <a href="https://lifehacker.ru/metod-fejnmana/" class="feynman__link" target="blank">Подробнее &rarr;</a>
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир - школа</h2>
+          <p class="khan__quote">
+            Страсть и новаторство Сала Хана меняют процесс обучения
+            миллионов студентов по всему миру. Книгу «Весь мир — школа»
+            нужно прочитать всем, кто занимается образованием — так<br>
+            учащиеся повсюду смогут получить навыки и знания, которые<br>
+            приносят успех в школе, карьере и жизни.
+          </p>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+
+          <div class="khan__book-container">
+
+            <img src="./images/khan-book.jpg" alt="Обложка 'Весь мир - школа'" class="khan__book-pic">
+            <a href="https://www.labirint.ru/books/483575/" class="khan__buy-link" target="_blank">Купить книгу &rarr;</a>
+
+          </div>
+
+        </article>
 
       </section>
 
-<!--              секция Метод Фейнмана          конец -->
+<!--              секция Салман Хан               конец -->
 
 <!--              секция Kaufman      Принципы обучения-->
 
@@ -191,11 +334,47 @@
 
         </ul>
 
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle rotation__kaufman-triangle"></div>
 
       </section>
 
-<!--Kaufman ПРИНЦИПЫ ОБУЧЕНИЯ                                               КОНЕЦ -->
+<!--              секция resources      Полезные ресурсы      -->
+
+      <section class="resources">
+
+        <h2 class="section-title">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+
+        <ul class="resources__logo-zone">
+
+          <li>
+            <a href="https://arzamas.academy/" target="_blank">
+              <img src="./images/resources-arzamas.svg" alt="Arzamas" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://nplus1.ru/" target="_blank">
+              <img src="./images/resources-n1.svg" alt="N+1" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://strelka.com/ru" target="_blank">
+              <img src="./images/resources-strelka.svg" alt="STRELKA" class="resources__logo">
+            </a>
+          </li>
+          <li>
+            <a href="https://polka.academy/" target="_blank">
+              <img src="./images/resources-polka.svg" alt="ПОЛКА" class="resources__logo">
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+<!--              секция resources                 конец      -->
+
+<!--Kaufman ПРИНЦИПЫ ОБУЧЕНИЯ                     КОНЕЦ       -->
 
     </main>
 
@@ -229,15 +408,15 @@
 
           <ul class="footer__column-links">
             <li>
-              <a href="https://www.facebook.com/yandex.praktikum" class="footer__column-link" target="blank">
+              <a href="https://www.facebook.com/yandex.praktikum" class="footer__column-link" target="_blank">
                 <img src="./images/facebook_color_white.svg" class="footer__social-icon" alt="иконка фейсбук">Facebook</a>
             </li>
             <li>
-              <a href="https://vk.com/yandex.praktikum" class="footer__column-link" target="blank">
+              <a href="https://vk.com/yandex.praktikum" class="footer__column-link" target="_blank">
                 <img src="./images/vk_color_white.svg" class="footer__social-icon" alt="иконка вконтакте">ВКонтакте</a>
             </li>
             <li>
-              <a href="#" class="footer__column-link" target="blank">
+              <a href="#" class="footer__column-link" target="_blank">
                 <img src="./images/instagram_color_white.svg" class="footer__social-icon" alt="иконка инстаграм">Instagram</a>
             </li>
           </ul>
@@ -245,9 +424,6 @@
         </nav>
 
       </div>
-
-
-
 
     </footer>
   </div>

@@ -1,0 +1,8 @@
+.table__cell {
+  width: 250px;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  /*border: rgb(30, 53, 255) 1px dashed;*/
+}
