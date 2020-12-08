@@ -1,3 +1,5 @@
+@import url('../vendor/normalize.css');
+
 @import url('../blocks/page/page.css');
 
 /*                       header                         */
@@ -77,7 +79,6 @@
 @import url('../blocks/table/__heading/_theme/table__heading_theme_dark.css');
 @import url('../blocks/table/__text/table__text.css');
 @import url('../blocks/table/__text/_theme/table__text_theme_dark.css');
-@import url('../blocks/table/_theme/table_theme_dark.css');
 
 
 /*                    section Khan    Весь мир - школа                 */
@@ -93,13 +94,6 @@
 @import url('../blocks/khan/__book-container/khan__book-container.css');
 @import url('../blocks/khan/__book-pic/khan__book-pic.css');
 @import url('../blocks/khan/__buy-link/khan__buy-link.css');
-
-/*
-mkdir __quote-author-subline && cd __quote-author-subline && touch khan__quote-author-subline.css && cd ..
-mkdir __book-container && cd __book-container && touch khan__book-container.css && cd ..
-mkdir __book-pic && cd __book-pic && touch khan__book-pic.css && cd ..
-mkdir __buy-link && cd __buy-link && touch khan__buy-link.css && cd ..
-*/
 
 
 /*                       section Принципы обучения от Кауфмана         */

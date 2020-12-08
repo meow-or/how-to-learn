@@ -1,5 +1,21 @@
 .resources__logo {
   width: 270px;
   height: 38px;
+  opacity: 1;
+  transition: opacity .5s linear;
   /*border: #d13a47 1px dotted;*/
 }
+
+
+
+.resources__logo:hover {
+  opacity: .6;
+  box-shadow: 0 2px 5px #f2f2f2;
+}
+
+.resources__logo:active {
+  opacity: .9;
+  box-shadow: 0 1px 7px #2f80ed;
+}
+
+
