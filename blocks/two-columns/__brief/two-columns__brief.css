@@ -1,6 +1,10 @@
 .two-columns__brief {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   width: 175px;
   margin: 0;
   font-size: 18px;

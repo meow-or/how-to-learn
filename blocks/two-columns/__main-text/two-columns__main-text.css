@@ -1,7 +1,10 @@
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /*border: rgb(30, 255, 86) 1px dashed;*/
 }

@@ -2,6 +2,8 @@
   color: #2f80ed;
   text-decoration: none;
   opacity: 1;
+  -webkit-transition: opacity .5s linear;
+  -o-transition: opacity .5s linear;
   transition: opacity .5s linear;
 }
 

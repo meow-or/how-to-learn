@@ -1,7 +1,9 @@
 .header__title {
   margin: 0;
   width: 730px;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
