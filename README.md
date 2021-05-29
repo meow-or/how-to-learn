@@ -7,6 +7,11 @@
 
 При создании использовались HTML и CSS.
 
+Для локального просмотра скачайте архив здесь 
+https://github.com/meow-or/how-to-learn/archive/refs/heads/main.zip
+
+Откройте index.html с помощью любого браузера.
+
 
 
 
