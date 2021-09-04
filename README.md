@@ -7,6 +7,8 @@
 
 При создании использовались HTML и CSS.
 
+Посмотреть вживую https://meow-or.github.io/how-to-learn/
+
 Для локального просмотра скачайте архив здесь 
 https://github.com/meow-or/how-to-learn/archive/refs/heads/main.zip
 
